@@ -1,9 +1,6 @@
  
  gcc -g p3final.c
- ./a.out
-enter the number :
-12
-1+2+3+4+5+6+7+8+9+10+11+12 is 78 gdb a.out
+ gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
@@ -35,10 +32,5 @@ enter the number :
 32    output(sum,n);
 (gdb) n
 33    return 0;
-(gdb) s
-34  }(gdb) n
-__libc_start_main (main=0x55cfd9800841 <main>, argc=1, argv=0x7ffedc8a4cb8, 
-    init=<optimized out>, fini=<optimized out>, rtld_fini=<optimized out>, 
-    stack_end=0x7ffedc8a4ca8) at ../csu/libc-start.c:344
-344 ../csu/libc-start.c: No such file or directory.
-(gdb) 
+(gdb) n
+34  }(gdb) 
